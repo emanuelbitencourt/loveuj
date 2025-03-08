@@ -1,0 +1,410 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(254, 243, 243, 1);
+    text-align: center;
+    font-family: "Suez One", serif;
+    
+}
+
+.falling-heart {
+    position: absolute;
+    top: -150px;  /* Começa acima da tela */
+    left: 50%;
+    transform: translateX(-50%);
+    animation: fall 6s ease-in-out forwards;  /* A animação agora tem duração de 6 segundos */
+  }
+  
+  @keyframes fall {
+    0% {
+      top: -150px;  /* Começa acima da tela */
+      opacity: 0;
+    }
+    50% {
+      top: 50%;  /* Chega ao centro da tela */
+      opacity: 1;
+    }
+    83% {
+      top: 50%;  /* Fica no centro por 3 segundos */
+      opacity: 1;
+    }
+    100% {
+      top: -150px;  /* Sai da tela para cima */
+      opacity: 0;
+    }
+  }
+  
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 20px; /* Adicionando margem no topo para mover a navbar para baixo */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(176, 30, 31, 1); /* Alterando para a nova cor vermelha */
+    font-size: 22px;
+}
+
+/* Estilo da navbar no desktop */
+.left {
+    left: 20px;
+}
+
+.center {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.right {
+    right: 20px;
+}
+
+.euteamoj {
+    margin-bottom: 0px;
+}
+
+.nomes {
+    margin-top: 0px;
+}
+
+#contador {
+    font-size: 24px;
+    color: rgb(176, 30, 31, 1); /* Alterando para a nova cor vermelha */
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column; /* Faz o conteúdo ficar empilhado */
+    align-items: center; /* Centraliza o texto */
+    text-align: center;
+}
+
+#imgpixel {
+    margin-top: 0px; /* Adiciona espaço acima da imagem */
+    text-align: center; /* Centraliza a imagem */
+}
+
+#imgpixel img {
+    width: 100px; /* Definindo o tamanho da imagem */
+    height: 100px;
+}
+
+.divider {
+    position: relative;
+    width: 100%;
+    height: 3.5px;
+    background-color: rgb(176, 30, 31, 1); /* Cor vermelha para a linha */
+    margin: 50px 0; /* Adiciona espaçamento acima e abaixo da linha */
+}
+
+.divider3 {
+    position: relative;
+    width: 100%;
+    height: 3.5px;
+    background-color: white; /* Cor vermelha para a linha */
+    margin: 50px 0; /* Adiciona espaçamento acima e abaixo da linha */
+}
+
+.divider3 img {
+    position: absolute;
+    top: -25px; /* Ajuste da imagem para que fique no meio da linha */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza a imagem */
+    width: 50px; /* Tamanho da imagem no meio da linha */
+    height: 50px;
+}
+
+.divider img {
+    position: absolute;
+    top: -25px; /* Ajuste da imagem para que fique no meio da linha */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza a imagem */
+    width: 50px; /* Tamanho da imagem no meio da linha */
+    height: 50px;
+}
+
+/* Estilo do Menu Hambúrguer (aparece apenas no mobile) */
+.hamburger-menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(176, 30, 31, 1); /* Alterando para a nova cor vermelha */
+    padding: 10px;
+}
+
+/* Menu do celular (oculto por padrão) */
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(176, 30, 31, 1); /* Alterando para a nova cor vermelha */
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    transition: transform 0.3s ease-in-out;
+    flex-direction: column;
+}
+
+.mobile-menu.active {
+    display: flex;
+    transform: translateX(0);
+}
+
+.mobile-menu li {
+    margin: 20px 0;
+}
+
+.mobile-menu li a {
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.mobile-menu li button.close-btn {
+    background-color: transparent;
+    color: white;
+    font-size: 40px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#section3 {
+    display: flex;
+    flex-direction: column; /* Para que os títulos fiquem empilhados */
+    align-items: flex-start; /* Alinha todos os itens à esquerda */
+    justify-content: flex-start;
+    padding: 50px 20px; /* Ajusta o espaçamento interno */
+    background-color: rgb(254, 243, 243, 1); /* Cor de fundo similar à da primeira seção */
+    text-align: justify; /* Justificando o texto */
+    max-width: 40%; /* O texto vai ocupar no máximo 40% da largura */
+    word-wrap: break-word; /* Faz o texto quebrar se ultrapassar o limite */
+}
+
+.nossa-historia {
+    font-size: 26px;
+    color: rgb(176, 30, 31, 1); /* A mesma cor vermelha */
+    margin: 0;
+    padding-left: 0; /* Garante que não há espaço à esquerda */
+    margin-top: 20px; /* Adiciona um espaço entre o traço e o título */
+}
+
+#section3 h1 {
+    margin: 0; /* Remove a margem dos h1 para alinhar melhor */
+    padding-left: 0; /* Remove qualquer padding à esquerda */
+}
+
+#section4 {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: rgb(254, 243, 243, 1); /* Mantendo o fundo similar ao da primeira seção */
+}
+
+#section4 h2 {
+    font-size: 26px;
+    color: rgb(176, 30, 31, 1); /* Cor vermelha */
+    margin-bottom: 30px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 800px;
+    overflow: hidden; /* Impede rolagem excessiva do carrossel */
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden; /* Garante que as imagens não saiam do limite */
+}
+
+.carousel-item {
+    display: none; /* Esconde as imagens inicialmente */
+    width: 682px; /* Define a largura das imagens no PC */
+    height: 618px; /* Define a altura das imagens no PC */
+    transition: opacity 0.5s ease-in-out;
+    object-fit: cover; /* Garante que a imagem preencha completamente o espaço sem distorcer */
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    outline: none; /* Remove o contorno do botão ao clicar */
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 20px; /* Ajuste para aproximar o botão da borda */
+}
+
+.spotify {
+    width: 400px;
+    height: 400px;
+}
+
+/* Responsividade para o celular */
+@media (max-width: 600px) {
+    .spotify {
+        width: 90%; /* Ajusta a largura para ocupar 90% da tela */
+        height: auto; /* Ajusta a altura automaticamente */
+    }
+    nav ul {
+        display: none; /* Esconde a navbar padrão */
+    }
+
+    .hamburger-menu {
+        display: block; /* Exibe o ícone de hambúrguer */
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    img {
+        width: 90%;
+        height: auto;
+    }
+
+    /* Adiciona o espaçamento branco nas laterais das imagens */
+    #section2 .img-container img {
+        width: 90%; /* Diminui a largura da imagem para dar espaço nas laterais */
+        margin: 0 auto; /* Centraliza a imagem */
+    }
+
+    #section3 {
+        max-width: 100%; /* Permite que ocupe toda a largura da tela */
+        text-align: center; /* Centraliza o texto */
+        padding: 20px; /* Ajusta o padding no mobile para não ficar apertado */
+    }
+
+    #section3 p {
+        text-align: left; /* Garante que o parágrafo não fique centralizado no mobile */
+        margin: 0; /* Remove margens que podem afetar o layout */
+        padding: 0; /* Remove qualquer padding */
+    }
+    #section3 h1 {
+        text-align: center; /* Centraliza o título no mobile */
+        margin: 0 auto; /* Garante que o título fique centralizado com margens automáticas */
+    }
+    
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 80px; /* Ajusta a distância para que o nome e a imagem fiquem abaixo da navbar */
+}
+
+.carousel-container {
+    width: 90%; /* Ajusta o carrossel para ocupar 90% da largura da tela */
+}
+
+.carousel-item {
+    width: 252px; /* Define a largura das imagens para 252px */
+    height: 264px; /* Define a altura das imagens para 264px */
+    object-fit: cover; /* Garante que a imagem preencha completamente o espaço sem distorcer */
+}
+
+button {
+    font-size: 25px; /* Reduz o tamanho da fonte dos botões para telas menores */
+}
+
+.next {
+    right: 10px; /* Ajuste da posição do botão direito */
+}
+
+h1 {
+    color: rgb(176, 30, 31, 1); /* Alterando para a nova cor vermelha */
+    font-size: 28px;
+    margin-top: 20px;
+    line-height: 1.2; /* Garante que as duas linhas fiquem separadas */
+    word-break: break-word;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Para dar um efeito de borda arredondada na imagem */
+}
+
+/* Estilo para a section2 */
+#section2 {
+    display: flex;
+    flex-direction: column; /* Mudando para coluna para empilhar as imagens */
+    align-items: center; /* Alinha as imagens ao centro */
+    margin-top: 50px; /* Espaçamento acima para separar da seção anterior */
+    background-color: transparent; /* Sem fundo aqui, o fundo será nas seções internas */
+}
+
+/* Metade da esquerda e direita */
+.section-left, .section-right {
+    display: flex;
+    flex-direction: column; /* Alinha o conteúdo em coluna */
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Agora as seções ocupam 100% da largura */
+    padding: 30px 0; /* Espaçamento interno */
+}
+
+/* Estilo da imagem da esquerda (img/bobocos) */
+
+/* Estilo para os "..." acima da imagem da direita */
+.dots {
+    color: white; /* Cor branca */
+    font-size: 36px; /* Tamanho maior para destaque */
+    position: absolute;
+    top: 10px; /* Distância do topo */
+    right: 10px; /* Alinha à direita da imagem */
+    z-index: 10; /* Garante que fique acima da imagem */
+}
+
+/* Estilo da hashtag */
+.hashtag-container {
+    margin-top: 20px;
+}
+
+@media (min-width: 601px) {
+    .carousel-item {
+        width: 682px; /* Mantém a largura das imagens para 682px no PC */
+        height: 618px; /* Mantém a altura das imagens para 618px no PC */
+    }
+
+    .next {
+        right: 130px; /* Ajuste da posição do botão direito para o PC */
+    }
+}

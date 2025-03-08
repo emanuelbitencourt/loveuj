@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>EU TE AMO!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bokor&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Love+Light&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Suez+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="heartImage" class="falling-heart">
+        <img src="img/pixel.png" alt="Coração" />
+      </div>      
+    <header>
+        <nav>
+            <ul class="left">
+                <li><a href="#inicio">Página Inicial</a></li>
+            </ul>
+            <ul class="center">
+                <li><a href="#historia">Nossa História</a></li> <!-- Aponta para a seção de nossa história -->
+            </ul>
+            <ul class="right">
+                <li><a href="#section4">Nossas Fotos</a></li> <!-- Aponta para a seção de nossas fotos -->
+            </ul>
+    
+            <!-- Menu hambúrguer (apenas visível no mobile) -->
+            <div class="hamburger-menu" id="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
+    
+            <!-- Menu oculto (apenas visível no mobile quando ativado) -->
+            <ul class="mobile-menu" id="mobile-menu">
+                <li><a href="#inicio" onclick="closeMenu()">Página Inicial</a></li>
+                <li><a href="#historia" onclick="closeMenu()">Nossa História</a></li> <!-- Aponta para a seção de nossa história -->
+                <li><a href="#section4" onclick="closeMenu()">Nossas Fotos</a></li> <!-- Aponta para a seção de nossas fotos -->
+                <li><button class="close-btn" onclick="closeMenu()">X</button></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    <section id="inicio" class="content">
+        <h1 class="nomes">Emanuel &<br>Jenny</h1>
+        <img class="0307" src="img/03-07.png" alt="Imagem do casal" width="450" height="400">
+        <h1 class="euteamoj">EU TE AMO!</h1>
+        <div id="contador">
+            <p id="contador-tempo"></p> <!-- Para mostrar a contagem do tempo -->
+        </div>
+    
+        <!-- Imagem em tamanho pequeno, centralizada -->
+        <div id="imgpixel">
+            <img src="img/kiss.png" alt="Imagem pequena" width="100" height="100">
+        </div>
+    </section>
+    
+    <!-- Linha divisória com imagem no meio -->
+    <div class="divider">
+        <img src="img/pixel.png" alt="Imagem no meio da linha divisória" width="50" height="50">
+    </div>
+    
+    <section id="section2">
+        <div class="section-left">
+            <div class="img-container">
+                <img src="img/bobocos.png" alt="Imagem Bobocos" class="img-bobocos" width="450" height="400">
+            </div>
+            <h2 style="color: red" class="teamo-texto"> - Se gosto de falar que eu te amo - </h2>
+        </div>
+
+        <div class="divider">
+            <img src="img/pixel.png" alt="Imagem no meio da linha divisória" width="50" height="50">
+
+        </div>
+        
+        <div class="section-right">
+            <div class="img-container">
+                <img src="img/emanuejenny.png" alt="Imagem Emanuel e Jenny" class="img-emanuejenny" width="450" height="400">
+            </div>
+            <div class="hashtag-container">
+                <h2 style="color: red ;"> - É porque eu te amo - </h2>
+            </div>
+        </div>
+        <div class="divider">
+            <img src="img/pixel.png" alt="Imagem no meio da linha divisória" width="50" height="50">
+
+        </div>
+    </section>
+
+    <section id="section3">
+        <h1>______________</h1>
+        <h1 id="historia" class="nossa-historia">NOSSA HISTÓRIA</h1>
+        
+        <!-- Novo conteúdo abaixo do título -->
+        <div class="conteudo">
+            <img src="img/nos.png" alt="Imagem ilustrativa" width="350px" height="350px">
+            <p style="color: red;">
+                E de pensar que se a gente não tivesse entrado no habblive aquele dia não estaríamos jogando roblox aqui hoje. 
+                É muito louco parar e olhar no efeito borboleta, o habblet cai, nós dois entramos no habblive, e estamos aqui hoje. 
+                Trocamos mensagem, marcamo um trisal com uma random???????? passamos o discord, paguei um açai KKKKK, peguei o seu whatsapp, loucura ne meu bem? 
+                Maktub amor, se tinha que acontecer, aconteceu! E hoje estamos aqui! 
+                Eu só tenho uma coisa pra te falar e espero que você saiba para todo sempre, é que EU TE AMO muito, e você não tem noção! 
+                Eu queria escrever bem mais, mas ai depois eu falo no seu ouvidinho em call!!!! EU TE AMO MUITO MINHA ZOIUDINHA PERFEITA LINDA CHEIROSA, EU TE AMO MUITO! 
+                Quero que você saiba todos os dias quando acordar que eu sempre estarei do seu lado para te ajudar, para te apoiar, para te ver chorar, para te ver sorrir, para passar todos os momentos contigo, e o mais importante... 
+                Para dizer que EU TE AMO!
+            </p>
+        </div>
+    </section>
+
+    <div class="divider">
+        <img src="img/pixel.png" alt="Imagem no meio da linha divisória" width="50" height="50">
+
+    </div>
+
+    <section id="section4">
+        <h2>Nosso Carrossel</h2>
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="img/ain.png" alt="Imagem 1" class="carousel-item">
+                <img src="img/ain2.png" alt="Imagem 2" class="carousel-item">
+                <img src="img/ain3.png" alt="Imagem 3" class="carousel-item">
+                <img src="img/ain4.png" alt="Imagem 3" class="carousel-item">
+                <img src="img/ain5.png" alt="Imagem 3" class="carousel-item">
+                <img src="img/ain6.png" alt="Imagem 3" class="carousel-item">
+                <img src="img/ain7.png" alt="Imagem 3" class="carousel-item">
+                <!-- Adicione mais imagens conforme necessário -->
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <div class="divider">
+        <img src="img/pixel.png" alt="Imagem no meio da linha divisória" width="50" height="50">
+
+    </div>
+
+    <H1>SESSÃO DE MÚSICA</H1>
+
+    <iframe class="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/track/1fOkmYW3ZFkkjIdOZSf596?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <div class="divider3">
+        <img src="img/pixel.png" alt="Imagem no meio da linha divisória" width="50" height="50">
+
+    <iframe class="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/track/0Yb3LnhxeuQmG05vl7YRhz?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <div class="divider3">
+        <img src="img/pixel.png" alt="Imagem no meio da linha divisória" width="50" height="50">
+    <iframe class="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/track/1mSxbLW7fKABfeY4lGpg0E?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <div class="divider3">
+        <img src="img/pixel.png" alt="Imagem no meio da linha divisória" width="50" height="50">
+    <iframe class="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/track/18zXw7VA97aovBwbxSpPqH?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <div class="divider3">
+        <img src="img/pixel.png" alt="Imagem no meio da linha divisória" width="50" height="50">
+    
+        <iframe class="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/track/1wtfZcywQbynryjXGBNfMQ?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <div class="divider3">
+            <img src="img/pixel.png" alt="Imagem no meio da linha divisória" width="50" height="50">
+        <iframe class="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/track/6G2Zfe5YH4JtTxyB1ulXTd?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+        <h1>EU TE AMO DE SEMPRE, PARA TODO SEMPRE, AMOR DA MINHA VIDA.</h1>
+        <h1>Feliz dia da mulher, mulher da minha vida.</h1>
+
+          
+
+    <script src="script.js"></script>
+</body>
+</html>
